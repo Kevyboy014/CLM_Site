@@ -32,4 +32,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar( 'front' ); ?>
-<?php get_footer(); ?>
+<?php // get_footer(); We have no need for the power of wordpress! ?>

@@ -27,4 +27,4 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php // get_footer(); We have no need for the power of wordpress! ?>
