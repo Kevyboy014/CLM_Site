@@ -479,7 +479,7 @@ img.wp-smiley,
 
 /* Body, links, basics */
 html {
-	font-size: 87.5%;
+	font-size: 100%;
 }
 body {
 	font-size: 14px;
@@ -543,7 +543,9 @@ a:hover {
 	padding: 12px 0;
 	padding: 0.857142857rem 0;
 	/* KB's addition: Set it to the same as the circle in poster */
-	background-color: rgb(257,139,108);
+	/*background-color: rgb(257,139,108); Temporarily removing */
+	/* Make sure that it never spans multiple lines */
+	min-width: 890px;
 }
 .site-header h1,
 .site-header h2 {
@@ -560,6 +562,9 @@ a:hover {
 	border-radius: 8px;
 	-moz-border-radius: 8px;
 	padding: 0px 15px 0px 15px;
+	word-spacing: 5px;
+	letter-spacing: 0.24em;
+    font-size: 2em;
 }
 .site-header h1 a:hover,
 .site-header h2 a:hover {
@@ -667,7 +672,7 @@ section[role="banner"] {
 
 /* Footer */
 footer[role="contentinfo"] {
-	border-top: 1px solid #ededed;
+	/*border-top: 1px solid #ededed;*/
 	clear: both;
 	font-size: 12px;
 	font-size: 0.857142857rem;
@@ -1612,10 +1617,6 @@ img#wpstats {
 @media screen and (min-width: 960px) {
 	body {
 		background-color: #e6e6e6;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
 	}
 	body .site {
 		padding: 0 40px;
@@ -1766,7 +1767,9 @@ img#poster {
 }
 
 #primary {
-	background-color: rgb(155,157,171)	
+	/*background-color: rgb(155,157,171)	*/
+	color:  white;
+	width: 80%;
 }
 
 #content {
@@ -1779,3 +1782,51 @@ img#poster {
 	border-radius: 8px;
 	-moz-border-radius: 8px;
 }
+
+/* Album artwork styling */
+
+div.album {
+	margin-bottom:  30px;
+}
+
+div.album > img.album-artwork, div.album > div.album-tracks {
+	display:  inline-block;
+	vertical-align: top;
+}
+
+img.album-artwork {
+	max-width: 304px;
+}
+
+
+img#footer {
+    width: 62%;
+    border: 6px solid silver;
+}
+
+body.custom-background {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-width:  930px;
+}
+
+/* Styling for the connect page */
+
+.connect-item {
+	margin-bottom: 10px;
+}
+
+.connect-item img {
+	width:  40px;
+	vertical-align: middle;
+	border-radius: 9.5px;
+}
+
+.connect-item > a {
+	color: white;
+	text-decoration: none;
+}
+
+

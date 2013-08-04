@@ -32,4 +32,8 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar( 'front' ); ?>
-<?php // get_footer(); We have no need for the power of wordpress! ?>
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+			<img id="footer" src="/wp-includes/images/custom/footer.jpg">
+		</div>
+	</footer>

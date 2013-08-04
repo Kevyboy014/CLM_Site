@@ -26,5 +26,5 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-
+<img id="footer" src="wp-includes/images/custom/footer.jpg">
 <?php // get_footer(); We have no need for the power of wordpress! ?>
