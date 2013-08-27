@@ -544,8 +544,6 @@ a:hover {
 	padding: 0.857142857rem 0;
 	/* KB's addition: Set it to the same as the circle in poster */
 	/*background-color: rgb(257,139,108); Temporarily removing */
-	/* Make sure that it never spans multiple lines */
-	min-width: 890px;
 }
 .site-header h1,
 .site-header h2 {
@@ -1474,7 +1472,8 @@ img#wpstats {
 		font-size: 1.857142857rem;
 		line-height: 1.846153846;
 		margin-bottom: 0;
-	    	text-align: center;
+	    text-align: center;
+		white-space: nowrap;
 	}
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
